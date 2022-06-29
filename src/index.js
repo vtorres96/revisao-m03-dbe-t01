@@ -9,6 +9,4 @@ app.use(express.json());
 app.use('/usuario', usersRoutes);
 app.use('/login', authenticationRoutes);
 
-app.listen(8000, () => {
-    console.log('Server running on port http://localhost:8000');
-});
+app.listen(process.env.PORT);
